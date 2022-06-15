@@ -27,9 +27,9 @@ body{font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
 header{
     width: 100%;
     height: 600px;
-    background: #ee9ca7;  /* fallback for old browsers */
+    background: #ee9ca7 !important;  /* fallback for old browsers */ 
 background: -webkit-linear-gradient(to right, #ffdde1, hsla(352, 71%, 77%, 0.692));  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #ffdde1, hsla(352, 71%, 77%, 0.699)), url(img/portafolio.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, #ffdde1, hsla(352, 71%, 77%, 0.699)), url(img/portafolio.jpg) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 background-size: cover;
 background-attachment: fixed;
 position: relative;
@@ -37,13 +37,10 @@ position: relative;
 nav{
     text-align: right;
     padding: 30px 50px 0 0;
-
-
-
 }
 
 nav> a{
-    color: #fff;
+    color: #fff !important;
     font-weight: 300;
     text-decoration: none;
     margin-right: 10px;
@@ -288,7 +285,7 @@ footer{
 
 }
 
- /* CONTENIDO MEDIA QUERIS CODER HOUSE*/
+
 
  @media screen and (max-width: 900px) {
      header{
@@ -368,7 +365,20 @@ footer{
 * {
     box-sizing: border-box;
 }
-
+#encabezado{
+    width: 100%;
+    height: 10px;
+    background: #414141 !important;
+position: relative;
+}
+#encabezado nav{
+    text-align: right;
+padding: 30px 20px 0 0;
+}
+#encabezado nav a{    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;}
 #cuerpo {
     background: #414141;
     color: #fff;
@@ -458,7 +468,11 @@ ul {
 
 
 @media(min-width: 900px) {
-
+    nav{text-align: right; 
+        padding: 30px 0 0 10px;}
+        nav >a{
+            margin-right: 5px;
+        }
     .contactos-wrap {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -573,3 +587,49 @@ input:focus::placeholder {
   }
 
   
+.portfolio{
+    background: #414141;
+
+}
+.titulo3{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+ margin-bottom: 60px;
+}
+
+.sobre-servicios{
+    background: #414141;
+    padding-bottom: 30px;
+margin: 0 0 100px 0;}   
+
+.serviciosCont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+   
+   .serviciosInd{
+       width: 28%;
+       text-align: center;}
+
+.serviciosInd img{
+
+        width: 90%;}
+.serviciosInd h3{
+        margin: 10px 0;}
+.serviciosInd p{
+        font-weight: 300;
+        text-align: justify;}    
+
+.footer{
+    background: #414141;
+    padding: 150px 0 0 0;
+    margin: auto;
+    overflow: hidden;
+}
+.galeriaPort{
+display: flex;
+align-content: center;
+flex-wrap: wrap;
+flex-direction: column;
+}
