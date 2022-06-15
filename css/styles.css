@@ -468,8 +468,8 @@ ul {
 
 
 @media(min-width: 900px) {
-    nav{text-align: right; 
-        padding: 30px 0 0 10px;}
+    .encabezado{text-align: right; 
+        padding: 100px 0 0 10px;}
         nav >a{
             margin-right: 5px;
         }
