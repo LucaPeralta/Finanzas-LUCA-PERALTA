@@ -1,0 +1,15 @@
+footer{
+    background: $backColor;
+    padding: 60px 0 30px 0;
+    margin: $margin;
+    overflow: hidden;
+    .contenedor-footer{
+        display: $display;
+        width: 90%;
+        justify-content: space-evenly;
+        margin: $margin;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #ccc;
+    
+    }
+}

@@ -1,0 +1,102 @@
+.cards{
+    display: $display;
+    justify-content: space-evenly;
+
+}
+
+.cards .card{
+    background: hsla(273, 98%, 49%, 0.562);
+    display:$display;
+    width: 46%;
+    height: 200px;
+    align-items: $centro;
+    justify-content: space-evenly;
+    border-radius: 5px;
+
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    @include block-clover
+    
+
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+
+}
+
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+    .servicios-cont{
+        display: $display;
+        justify-content: space-between;
+        align-items: $centro;
+       
+       }
+}
+
+
+.servicios-ind{
+    width: 28%;
+    text-align: $centro;
+    .servicios-ind h3{
+    margin: 10px 0;
+}
+.servicios-ind p{
+    font-weight: 300;
+    text-align: justify;
+
+}
+
+}
+.servicios-ind img{
+    width: 90%;
+}
+.sobre-servicios{
+    background: $backColor;
+    padding-bottom: 30px;
+margin: 0 0 100px 0;}   
+
+.serviciosCont{
+    display: $display;
+    justify-content: space-between;
+    align-items: $centro;}
+   
+   .serviciosInd{
+       width: 28%;
+       text-align: $centro;}
+
+.serviciosInd img{
+
+        width: 90%;}
+.serviciosInd h3{
+        margin: 10px 0;}
+.serviciosInd p{
+        font-weight: 300;
+        text-align: justify;}    
+
+.footer{
+    background: $backColor;
+    padding: 150px 0 0 0;
+    margin: $margin;
+    overflow: hidden;
+}
+.galeriaPort{
+display: $display;
+align-content: $centro;
+flex-wrap: wrap;
+flex-direction: column;
+}
